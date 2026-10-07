@@ -1,0 +1,18 @@
+package com.biblioteca.backend.model;
+
+public enum Rol {
+    ADMIN,
+    BIBLIOTECARIO,
+    LECTOR
+}
+
+public enum Estado {
+    ACTIVO,
+    SANCIONADO
+}
+
+public enum EstadoPrestamo {
+    ACTIVO,
+    DEVUELTO,
+    ATRASADO
+}

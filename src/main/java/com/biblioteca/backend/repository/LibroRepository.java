@@ -11,16 +11,3 @@ public interface LibroRepository extends JpaRepository<Libro, Long> {
     Libro findByTituloContaining(String titulo);
     Libro findByCategoria(String categoria);
 }
-
-@Repository
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
-    Usuario findByEmail(String email);
-}
-
-@Repository
-public interface PrestamoRepository extends JpaRepository<Prestamo, Long> {
-    java.util.List<Prestamo> findByUsuario(Usuario usuario);
-    java.util.List<Prestamo> findByEstado(EstadoPrestamo estado);
-    java.util.List<Prestamo> findByUsuarioAndEstado(Usuario usuario, EstadoPrestamo estado);
-    java.util.List<Prestamo> findByFechaDevolucionEsperadaBefore(LocalDate fecha);
-}
