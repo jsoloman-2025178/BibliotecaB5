@@ -1,0 +1,49 @@
+# See http://wiki.github.org/.gitignore for more about ignoring files.
+# .gitignore for Java/Maven/Gradle projects
+
+# See http://www.thesetips.net/article/3688/javanetbeansmaven_eclipse_gradle_idea_debug_opts/
+# fuer más información.
+
+# Compiled class files
+*.jar
+*.class
+
+# Log files
+*.log
+
+# Eclipse Eclipse ^
+/.target/
+
+# Mobile tools for Android (ctags)
+/.ctags
+
+# PrintSpool
+/*.psd
+
+# IDEs and editors
+/.idea/
+/.codekit/
+/.vscode/
+/*.prj
+/*.ds_store
+/*.project
+/.factorypath
+
+# Assistant stuff
+/android-studio/
+/.meson/
+
+# System files
+/.DS_Store
+/Thumbs.db
+
+# Spring
+/target/
+/*.iml
+/.gradle/
+
+# h2 database
+*.h2.db
+
+# JWT/temp files
+/tmp/
